@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300&display=swap");
+:root {
+  --BackGroundColor: #121212;
+  --NavbarBackground: #1d1d1d;
+  --Cardbackground: #1d1d1d;
+  --Inputbackground: #373737;
+  --Footerbackground: #1d1d1d;
+  --Titelcolor: #dedede;
+  --Label: #fafafa;
+  --placeholdercolor: #7d7c7e;
+  --color: #ffff;
+  --borderColor: #373737;
+  --Boxshadowcolor: #121212;
+  --InputBoxshadow: #000000;
+}
+.Lightmode {
+  --BackGroundColor: #ffffff;
+  --NavbarBackground: #2b2d42;
+  --Cardbackground: #ffffff;
+  --Inputbackground: #ffff;
+  --Footerbackground: #f2f2f2;
+  --Titelcolor: #2b2d42;
+  --Label: #1e1e20;
+  --color: rgb(0, 0, 0);
+  --borderColor: #ced4da;
+  --InputBoxshadow: #64a2ff;
+  --placeholdercolor: #757d85;
+  --Boxshadowcolor: #878787;
+}
+
+::placeholder {
+  color: var(--placeholdercolor) !important;
+  /* opacity: 1; */
+}
+.fa-sun,
+.fa-moon {
+  font-size: 25px;
+  color: #b7b7b7;
+  cursor: pointer;
+  transition: color 0.3s linear;
+}
+.fa-sun:hover,
+.fa-moon:hover {
+  color: #ffffff;
+}
+#nav {
+  background-color: var(--NavbarBackground);
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--BackGroundColor);
+  height: 100vh;
+}
+.navbar-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.Titel {
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  font-size: 3rem;
+  color: var(--Titelcolor);
+}
+#Difficulty,
+#Sort {
+  background-color: var(--Inputbackground) !important;
+  border-color: var(--borderColor) !important;
+  color: var(--color) !important;
+  color: var(--Titelcolor) !important;
+  transition: box-shadow 0.15s ease-in-out;
+  /* background-image: var(--placeholdercolor) !important; */
+}
+select:focus {
+  box-shadow: 0px 0px 8px var(--InputBoxshadow) !important;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: var(--Footerbackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 10px;
+  margin: 0px;
+  color: var(--placeholdercolor);
+}
+label {
+  color: var(--Label);
+}
+input {
+  background-color: var(--Inputbackground) !important;
+  border-color: var(--borderColor) !important;
+  color: var(--color) !important;
+  transition: box-shadow 0.15s ease-in-out;
+}
+input:focus {
+  box-shadow: 0px 0px 8px var(--InputBoxshadow) !important;
+}
+
+label {
+  font-size: 15px;
+}
+.coustom {
+  width: 100%;
+  height: 150px;
+  background-color: var(--Cardbackground);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: Box-shadow 0.3s linear;
+}
+.coustom:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.Hard {
+  background-color: #ef233c;
+  color: rgba(183, 28, 46, 0.898) !important;
+  font-family: "Bebas Neue", cursive !important;
+}
+.Easy {
+  background-color: #6a994e;
+  color: #588041 !important;
+  font-family: "Bebas Neue", cursive !important;
+}
+.Normal {
+  background-color: #7e838d;
+  color: #6e737c !important;
+  font-family: "Bebas Neue", cursive !important;
+}
+.coustomHeader {
+  width: 100%;
+  height: 40px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 2px 8px var(--Boxshadowcolor);
+}
+.CoustomTitel {
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.Coustonbtn {
+  width: 80%;
+  height: 30px;
+  margin: 0px auto;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.Donebtn {
+  width: 80%;
+  height: 30px;
+  padding: 0px;
+}
+.Container {
+  height: 73%;
+}
+.distext {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 800;
+  color: var(--color);
+}
+
+.tskTitel {
+  margin-top: 29px;
+}
+.Date {
+  font-size: 10px;
+}
+.Donebtn {
+  width: 80%;
+  font-size: 10px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+.Donebtn i {
+  font-size: 12px;
+}
+
+.Cleanbtn {
+  background-color: #d90429;
+  color: white;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 800;
+  transition: color 0.3s linear;
+}
+.Cleanbtn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+  color: #960019;
+}
+.Cleanbtn:focus {
+  box-shadow: none;
+}
